@@ -15,6 +15,7 @@ app = FastAPI(title="Emotion Detection Microservice")
 ALLOWED_ORIGINS = [
     "http://localhost",
     "http://127.0.0.1",
+    "https://serenityface.vercel.app",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "http://127.0.0.1:5500",
