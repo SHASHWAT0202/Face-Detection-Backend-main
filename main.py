@@ -25,7 +25,7 @@ ALLOWED_ORIGINS = [
 app.add_middleware(
     CORSMiddleware,
     allow_origins=ALLOWED_ORIGINS,
-    allow_origin_regex=r"^https://([a-z0-9-]+)\.github\.io$",  # allow any *.github.io
+    allow_origin_regex=r"^https://([a-z0-9-]+)\.vercel\.app$|^https://([a-z0-9-]+)\.github\.io$",  # allow any *.github.io
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
